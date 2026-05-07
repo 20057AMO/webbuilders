@@ -118,3 +118,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+// ─── Preloader Removal ──────────────────────────────────────────
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        // Add a small delay to ensure the animation feels smooth
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+            // Remove from DOM after transition
+            setTimeout(() => {
+                preloader.remove();
+            }, 800);
+        }, 500);
+    }
+});
