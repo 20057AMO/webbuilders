@@ -36,8 +36,9 @@
 }
 
 .loader-logo {
-  width: 90px;
-  height: auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   animation: logoPulse 2s infinite ease-in-out;
 }
 
